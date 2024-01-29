@@ -27,31 +27,3 @@ echo $0,$1,$2,$#,$*
 echo $?
 #PID Shell actual
 echo $$
-
-
-##ACTIVITAT 2##
-
-
-#Primera part#
-echo "Escriu 5 arguments"
-read un dos tres quatre cinc
-echo $un , $dos , $tres , $quatre , $cinc , $0
-
-#Segona part#
-# $@ ens printa cada parametre en una linia diferent
-
-echo $@
-
-#Tercera Part
-
-# $* ens printa tots els parametres en una linia
-echo $*
-
-##ACTIVITAT 3##
-
-
-#!/bin/bash
-read -p "Escriu el teu usuari: " user
-#La comanda -sp oculta la contrasenya
-read -sp "Escriu la contrasenya: " contra
-echo "El teu usuari és: "$user" i la teva contrsenya és: "$contra
