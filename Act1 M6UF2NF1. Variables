@@ -38,15 +38,14 @@ read un dos tres quatre cinc
 echo $un , $dos , $tres , $quatre , $cinc , $0
 
 #Segona part#
-# Bucle que cada parametre el fica a la variable $a i la printa
-for a in $@
-do
-        echo $a
-done
+# $@ ens printa cada parametre en una linia diferent
+
+echo $@
 
 #Tercera Part
 
-
+# $* ens printa tots els parametres en una linia
+echo $*
 
 ##ACTIVITAT 3##
 
