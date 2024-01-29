@@ -32,7 +32,19 @@ echo $$
 ##ACTIVITAT 2##
 
 
+#Primera part#
+echo "Escriu 5 arguments"
+read un dos tres quatre cinc
+echo $un , $dos , $tres , $quatre , $cinc , $0
 
+#Segona part#
+# Bucle que cada parametre el fica a la variable $a i la printa
+for a in $@
+do
+        echo $a
+done
+
+#Tercera Part
 
 
 
