@@ -1,9 +1,5 @@
-
 #!/bin/bash
-read -p 'Ruta: ' ruta
-if [ -f $ruta ]
-then
-	echo "És un arxiu"
-grep 'No.' wireshark.txt > contarlineas.txt
-wc -l contarlineas.txt
-fi
+read -p "Escriu el protocol: " protocol
+#Utilitzem la opcio wc per comptar el numero de vegades que esta el protocol al fitxer
+grep $protocol wireshark.txt > lineas.txt
+wc -l lineas.txt
